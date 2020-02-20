@@ -1,7 +1,9 @@
 version: '3.3'
 services:
     simplehtmlnginx:
-        image: .
+        build:
+            context: .
+            dockerfile: Dockerfile
         container_name: simplehtmlnginx
         restart: unless-stopped
         ports: 
