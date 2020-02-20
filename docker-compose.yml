@@ -1,21 +1,21 @@
 version: '3.3'
 services:
-    nginxindividual:
-        image: nginx:latest
-        container_name: nginxindividual
+    simplehtmlnginx:
+        image: .
+        container_name: simplehtmlnginx
         restart: unless-stopped
         ports: 
             - "38666:80"
             - "38667:443"
 
-    mysqlindividual:
-        image: mysql:latest
-        container_name: mysqlindividual
-        ports:
-            - "8026:3306"
-        restart: unless-stopped
-        environment: 
-            MYSQL_DATABASE: 'db'
-            MYSQL_ROOT_PASSWORD: 'password'
-            MYSQL_USER: 'banaan'
-            MYSQL_PASSWORD: 'kiwi'
+    # mysqlindividual:
+        # image: mysql:latest
+        # container_name: mysqlindividual
+        # ports:
+            # - "8026:3306"
+        # restart: unless-stopped
+        # environment: 
+            # MYSQL_DATABASE: 'db'
+            # MYSQL_ROOT_PASSWORD: 'password'
+            # MYSQL_USER: 'banaan'
+            # MYSQL_PASSWORD: 'kiwi'
