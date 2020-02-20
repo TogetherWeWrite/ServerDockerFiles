@@ -9,3 +9,11 @@ services:
         ports: 
             - "38666:80"
             - "38667:443"
+        # insight for myself on what files there are in nginx
+        volumes:
+            #config etc
+            - ~/examplefiles/nginxinsightfiles/etc#:/etc/nginx
+            #content
+            - ~/examplefiles/nginxinsightfiles/html#:/usr/share/nginx/html
+            #log
+            - ~/examplefiles/nginxinsightfiles/log#:/var/log/nginx/log
