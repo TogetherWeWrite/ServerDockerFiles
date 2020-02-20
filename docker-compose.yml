@@ -12,7 +12,7 @@ services:
         # insight for myself on what files there are in nginx
         volumes:
             #config etc
-            - ~/examplefiles/nginxinsightfiles/etc:/etc/nginx
+            #- ~/examplefiles/nginxinsightfiles/etc:/etc/nginx
             #content
             - ~/examplefiles/nginxinsightfiles/html:/usr/share/nginx/html
             #log
